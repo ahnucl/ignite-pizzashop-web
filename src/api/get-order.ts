@@ -7,7 +7,7 @@ export type GetOrdersQuery = {
   status?: string | null
 }
 
-type GetOrdersResponse = {
+export type GetOrdersResponse = {
   orders: {
     orderId: string
     createdAt: string
