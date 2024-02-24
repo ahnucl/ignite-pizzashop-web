@@ -1,31 +1,10 @@
 import { useQuery } from '@tanstack/react-query'
 import { BarChart } from 'lucide-react'
-import {
-  CartesianGrid,
-  Cell,
-  Pie,
-  PieChart,
-  ResponsiveContainer,
-  Tooltip,
-} from 'recharts'
+import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
 import colors from 'tailwindcss/colors'
 
 import { getPopularProducts } from '@/api/get-popular-products'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from '@/components/ui/card'
-
-const data = [
-  { product: 'Pepperoni', amount: 40 },
-  { product: 'Mussarela', amount: 30 },
-  { product: 'Marguerita', amount: 20 },
-  { product: '4 Queijos', amount: 15 },
-  { product: 'Frango com catupiry', amount: 25 },
-]
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 const COLORS = [
   colors.sky[500],
